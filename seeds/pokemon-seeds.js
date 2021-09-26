@@ -1,4 +1,4 @@
-const { Pokemon } = require('../models');
+const { Pokemon } = require('../models/');
 
 const pokedata = [
   {

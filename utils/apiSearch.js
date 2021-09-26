@@ -4,7 +4,7 @@ const express = require('express')
 const app = express()
 
 // import sequelize connection
-const sequelize = require('./config/connection');
+const sequelize = require('./config/connection/');
 
 const PORT = process.env.PORT || 3001;
 
@@ -33,7 +33,7 @@ function renderEverything(){
 
 //fetches the original 151 pokemon 
 function fetchKantoPokemon(){
-  fetch('https://pokeapi.co/api/v2/pokemon?limit=151')
+  fetch('https://pokeapi.co/api/v2/pokemon?offset=100&limit=100')
   .then(response => response.json())
   .then(function(allpokemon){
       allpokemon.results.forEach(function(pokemon){

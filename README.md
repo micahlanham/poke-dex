@@ -3,6 +3,10 @@
 
  A Pokémon catalogue, built with [React](https://reactjs.org/), [Material-UI](https://material-ui.com/) and [PokéAPI](https://pokeapi.co/).
  
+ ## User Story
+ As a Pokémon lover, I want to be able to always have information on my favorite Pokémon available. 
+
+ 
  ## Features
 - View basic details of each Pokémon
 - Filter Pokémon by type

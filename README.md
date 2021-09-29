@@ -1,7 +1,7 @@
 # Poke-dex
 ## PokéDex
 
- A simple Pokémon catalogue, built with [React](https://reactjs.org/), [Material-UI](https://material-ui.com/) and [PokéAPI](https://pokeapi.co/).
+ A Pokémon catalogue, built with [React](https://reactjs.org/), [Material-UI](https://material-ui.com/) and [PokéAPI](https://pokeapi.co/).
  
  ## Features
 - View basic details of each Pokémon
@@ -30,6 +30,7 @@
 - Offline mode
 - Router for Pokemon details
 - Add dark theme
+- Add colors to cards
 
 ## Credits
 

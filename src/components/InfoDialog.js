@@ -125,45 +125,7 @@ export default function InfoDialog(props) {
                                             )}
                                         </div>
                                     </div>
-                                    <div>
-                                        <div className="info__container__headings">Evolution</div>
-                                        <div className="evolution__box">
-                                            {props.evoChain.map((value, index, elements) =>
-                                                <Delayed waitBeforeShow={(index + 0) * 800} key={elements[index].species_name}>
-                                                    <div className="evolution__sub__box">
-                                                        
-                                                        <div>
-                                                        <motion.div
-                                                            animate={{ rotate: 360 }}
-                                                            transition={{ duration: 2, ease: "easeOut", type:'spring', bounce: 0.65,  damping: 25 }}
-                                                            whileHover={{ scale: 1.05 }}
-                                                        >
-                                                            <div className="evolution__img__div" style={{ background: `linear-gradient(${finalColor[0]}, ${finalColor[1]})` }}>
-                                                                <div className="transparency__div">
-                                                                    <LazyLoadImage
-                                                                        alt="image-pokemon"
-                                                                        height={80}
-                                                                        width={80}
-                                                                        src={elements[index].image_url}
-                                                                        visibleByDefault={false}
-                                                                        delayMethod={'debounce'}
-                                                                        effect="blur"
-                                                                        className="evo_img"
-                                                                        onClick={() => props.evolutionPokemon(props.number, elements[index].species_name, props.category, elements[index].image_url)}
-                                                                    />
-                                                                    {/* <img src={elements[index].image_url} className="evo_img" /> */}
-                                                                </div>
-                                                            </div>
-                                                            </motion.div>
-                                                            <div className="evolution__poke__name">{elements[index].species_name}</div>
-                                                        </div>
-                                                        
-                                                        {elements[index + 1] && <ArrowRightAltIcon className="arrow__right"></ArrowRightAltIcon>}
-                                                    </div>
-                                                </Delayed>
-                                            )}
-                                        </div>
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
